@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<name>spring-cloud-cm</name>
+	<description>spring-cloud-project</description>
+	<groupId>spring.cloud.cm</groupId>
+	<artifactId>spring-cloud-cm</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0-alpha-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>  
+
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>maven2.java.net</id>
+			<name>Java.net Repository for Maven 2</name>
+			<url>http://download.java.net/maven/2/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>sonatype-snapshot-repo</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<url>https://repository.sonatype.org/content/repositories/apache-snapshots</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/cacerts.sample</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+			</plugin>
+ 			<plugin>
+ 				<artifactId>maven-compiler-plugin</artifactId>
+ 				<configuration>
+ 					<source>1.8</source>
+ 					<target>1.8</target>
+ 					<showDeprecation>true</showDeprecation>
+ 					<showWarnings>true</showWarnings>
+ 					<optimize>true</optimize>
+ 				</configuration>
+ 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.8.1</version>
+				<!--<configuration>
+					<skipTests>${skipTests}</skipTests>
+				</configuration>-->
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
