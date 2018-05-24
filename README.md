@@ -5,4 +5,4 @@
 
 
 # 1.x Architecture
-<img src="https://github.com/SpringCloud/spring-cloud-cm/tree/master/page-resources/1.0/architecture.png"/>
+![image](https://github.com/SpringCloud/spring-cloud-cm/tree/master/page-resources/1.0/architecture.png)
