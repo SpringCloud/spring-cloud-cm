@@ -6,3 +6,5 @@
 
 # 1.x Architecture
 ![image](https://github.com/SpringCloud/spring-cloud-cm/tree/master/page-resources/1.0/architecture.png)
+![image](https://github.com/SpringCloud/eureka-admin/blob/master/eureka-admin-sample/eureka-admin-sample-eureka-server/img/Admin.png)
+
