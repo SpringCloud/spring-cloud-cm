@@ -5,6 +5,7 @@
 
 # 适用场景
 1、k8s集群外未容器化的中间件组件。
+
 2、springCloud微服务容器化迁移场景，k8s集群内的微服务与集群外注册于eureka或zk的微服务并行。
 
 # 1.x Architecture
