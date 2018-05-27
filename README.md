@@ -10,8 +10,11 @@
 
 # 术语定义
 CM ：Center Manager 管理连接器
+
 Studio：Management Studio管理控制器
+
 Proxy：Service Proxy 服务代理
+
 Agent：Manage Agent 管理代理
 
 
