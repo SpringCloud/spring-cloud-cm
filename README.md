@@ -8,8 +8,19 @@
 
 2、部分k8s集群外未容器化的中间件组件。
 
+# 术语定义
+CM ：Center Manager 管理连接器
+Studio：Management Studio管理控制器
+Proxy：Service Proxy 服务代理
+Agent：Manage Agent 管理代理
+
+
+
+
 # 1.x Architecture
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/architecture.png)
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/agent-base.png)
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/cm-base.png)
+![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/agent-uml.png)
+![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/app-uml.png)
 
