@@ -17,7 +17,14 @@ Proxy：Service Proxy 服务代理
 
 Agent：Manage Agent 管理代理
 
+# 方案对比
+第一种迁移方案:service注册，否定。
 
+![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/one-architecture.png)
+
+第二种迁移方案：podIp注册，否定。
+
+第三种迁移方案：增加通信组件。
 
 
 # 1.x Architecture
