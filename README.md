@@ -20,7 +20,7 @@ Agent：Manage Agent 管理代理
 # 方案对比
 第一种迁移方案:service注册，否定。
 
-![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/one-architecture.png)
+![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/one-Architecture.png)
 
 第二种迁移方案：podIp注册，否定。
 
