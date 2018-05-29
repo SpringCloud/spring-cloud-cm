@@ -28,8 +28,9 @@ Agent：Manage Agent 管理代理
 
 第三种迁移方案：增加通信组件。
 
+![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/three-Architecture.png)
 
-# 1.x Architecture
+# 通信组件 Architecture
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/architecture.png)
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/agent-base.png)
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/cm-base.png)
