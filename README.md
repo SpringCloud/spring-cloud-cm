@@ -24,6 +24,8 @@ Agent：Manage Agent 管理代理
 
 第二种迁移方案：podIp注册，否定。
 
+![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/two-Architecture.png)
+
 第三种迁移方案：增加通信组件。
 
 
