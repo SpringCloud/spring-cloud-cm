@@ -37,3 +37,9 @@ Agent：Manage Agent 管理代理
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/agent-uml.png)
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/app-uml.png)
 
+# 通信组件原理
+1、通信互通
+
+2、watch机制
+
+3、心跳保持
