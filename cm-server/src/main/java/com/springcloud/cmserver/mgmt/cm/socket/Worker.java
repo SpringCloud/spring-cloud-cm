@@ -22,15 +22,7 @@ public class Worker extends Thread {
         this.serverData = serverData;
     }
 
-    private static ApplicationContext context;
-
-    public static void setContext(ApplicationContext cxt) {
-        context = cxt;
-    }
-
-    public static ApplicationContext getContext() {
-        return context;
-    }
+   
 
     public void run() {
         PacketMessage recvPacket = new PacketMessage(serverData.data);
@@ -51,17 +43,7 @@ public class Worker extends Thread {
                 logger.debug("Receive : busiName: {} msgBody: {}", new Object[]{busiName, msgBody});
             }
 
-           // BaseBusiAction service = null;
-
-
-          /*  service = (BaseBusiAction) context.getBean("service_" + busiName);
-            if (service == null) {
-                logger.debug("Receive invalid socket request.");
-                serverData.socket.socket().close();
-                serverData.socket.close();
-                return;
-            }
-            result = service.execute(context, params, serverData.socket);*/
+         //business service
         } catch (Exception e) {
             e.printStackTrace();
         }
