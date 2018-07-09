@@ -21,6 +21,16 @@ Proxy：Service Proxy 服务代理
 
 Agent：Manage Agent 管理代理
 
+# 通信组件原理
+1、通信互通
+
+2、watch机制
+
+3、心跳保持
+
+# 优势
+1、优势：对集群并行独立，最大程度保持新老环境独立运行，通过中间件衔接，降低迁移分险。
+
 # 方案对比
 第一种迁移方案:service注册，否定。
 
@@ -41,12 +51,4 @@ Agent：Manage Agent 管理代理
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/agent-uml.png)
 ![image](https://github.com/SpringCloud/spring-cloud-cm/blob/master/page-resources/img/app-uml.png)
 
-# 通信组件原理
-1、通信互通
 
-2、watch机制
-
-3、心跳保持
-
-# 优势
-1、优势：对集群并行独立，最大程度保持新老环境独立运行，通过中间件衔接，降低迁移分险。
