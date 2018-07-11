@@ -32,15 +32,9 @@ public class Startup {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int socketPort = SystemConfig.getInt("socketPort");
 		String runMode = SystemConfig.getString("runMode");
-		
 		PropertyConfigurator.configure(SystemConfig.getString("log4jConfigLocation"));
-		
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-		Worker.setContext(ctx);
-		
 		try {
 			EchoWorker worker = new EchoWorker();
 			new Thread(worker).start();
