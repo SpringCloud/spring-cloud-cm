@@ -69,8 +69,6 @@ public class NioServer implements Runnable {
 
 	public void send(SocketChannel socket, byte[] data) {
 		synchronized (this.pendingChanges) {
-			// Indicate we want the interest ops set changed
-			//this.pendingChanges.add(new ChangeRequest(socket, ChangeRequest.CHANGEOPS, SelectionKey.OP_WRITE));
 			this.pendingChanges.add(new ChangeRequest(socket, ChangeRequest.CHANGEOPS, SelectionKey.OP_WRITE));
 
 			// And queue the data we want written
@@ -85,14 +83,12 @@ public class NioServer implements Runnable {
 			}
 		}
 
-		// Finally, wake up our selecting thread so it can make the required changes
 		this.selector.wakeup();
 	}
 
 	public void run() {
 		while (true) {
 			try {
-				// Process any pending changes
 				synchronized (this.pendingChanges) {
 					Iterator<ChangeRequest> changes = this.pendingChanges.iterator();
 					while (changes.hasNext()) {
@@ -132,7 +128,6 @@ public class NioServer implements Runnable {
 					}
 				}
 			} catch (Exception e) {
-				//e.printStackTrace();
 				logger.error("err : " + e.getMessage());
 				this.pendingChanges.clear();
 			}
@@ -248,7 +243,7 @@ public class NioServer implements Runnable {
 		return socketSelector;
 	}
 
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		try {
 			EchoWorker worker = new EchoWorker();
 			new Thread(worker).start();
@@ -256,5 +251,5 @@ public class NioServer implements Runnable {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}*/
+	}
 }
