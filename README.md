@@ -1,8 +1,6 @@
 # spring-cloud-cm
 主要实现基于容器化环境下springcloud融合存在的通讯问题与watch机制的建立。
 
-目前已提交基本server端版本。
-
 # 适用场景
 1、springCloud微服务容器化迁移场景，k8s集群内的微服务与集群外注册于eureka或zk的微服务并行。
 
